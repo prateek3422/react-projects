@@ -1,7 +1,7 @@
 import React, { useId } from "react";
 
-const input = React.forwardRef(
-  ({ leble, type = "text", className = "", ...props }) => {
+const  Input = React.forwardRef(
+  ({ leble, type = "text", className = "", ...props }, ref) => {
     const id = useId();
     return (
       <div className="w-full">
@@ -18,4 +18,4 @@ const input = React.forwardRef(
   }
 );
 
-export default input;
+export default  Input;

@@ -1,7 +1,7 @@
 import config from "../config/config";
 import { Client, Databases, ID, Storage, Query } from "appwrite";
 
-export class service {
+export class appwriteService {
   client = new Client();
   databases;
   Bucket;
@@ -34,7 +34,7 @@ export class service {
     }
   }
 
-  async updatePOST(slug, { title, content, status, featuredImages }) {
+  async updatePost(slug, { title, content, status, featuredImages }) {
     try {
       return this.databases.updateDocument(
         config.appwriteDatabaseID,
@@ -134,5 +134,5 @@ export class service {
 
 }
 
-const service = service();
+const service = appwriteService();
 export default service;

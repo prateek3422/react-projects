@@ -8,6 +8,10 @@ import select from './select'
 import postcard from "./postCard";
 import  Input from "./Input"
 import Button from './button'
+import RTE from './RTE'
+import Signup from "./signup.jsx"
+import AuthLayout from "./AuthLayout"
+
 export {
     Headers,
     Footer,
@@ -18,6 +22,9 @@ export {
     postcard,
     Input,
     Button,
+    RTE,
+    Signup,
+    AuthLayout
     
 
 }

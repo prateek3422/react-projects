@@ -134,5 +134,5 @@ export class appwriteService {
 
 }
 
-const service = appwriteService();
+const service = new appwriteService();
 export default service;

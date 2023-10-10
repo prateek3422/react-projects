@@ -1,12 +1,11 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
-import { container, logoutBtn} from "../index"
+import { Container, Logo, LogoutBtn} from "../index"
 import { useNavigate } from 'react-router-dom'
 
 
 const Headers = () => {
   const autStatus = useSelector((state) => state.auth.status)
-  
   const navigate = useNavigate()
 
   const navList = [
@@ -37,7 +36,7 @@ const Headers = () => {
   return (
     <header className='py-3 shadow bg-gray-400'>
 
-    <container>
+    <Container>
       <nav className='flex'>
         <div className=''><Logo/></div>
 
@@ -57,14 +56,14 @@ const Headers = () => {
             {
               autStatus && (
                 <li>
-                  <logoutBtn/>
+                  <LogoutBtn/>
                 </li>
               )
             }
 
             </ul>
       </nav>
-    </container>
+    </Container>
     </header>
   )
 }
